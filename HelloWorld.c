@@ -1,5 +1,8 @@
 #include <stdio.h>
 #include <stdbool.h>
+#include <string.h>
+#include <math.h>
+#include <ctype.h>
 
 int main(){
 
@@ -143,6 +146,149 @@ int main(){
     //printf("%d\n", x);
 //____________________________________________________________________
 
+  //This is a tutorial on User input
+  
+  //char name[25];
+  //int age;
+
+  //printf("What your name?");
+  //scanf("%s", &name);
+  //fgets(name, 25, stdin);
+  //name[strlen(name)-1] = '\0';
+
+  //printf("\nHow old are you?");
+  //scanf("%d", &age);
+
+  //printf("\nHello %s, how are you?", name);
+  //printf("\nYou are %d years old", age);
+//____________________________________________________________________
+
+  //Useful math functions
+
+  /*double A = sqrt(9);
+  double B = pow(2, 4);
+  int C = round(3.14);
+  int D = ceil(3.14);
+  int E = floor(3.99);
+  double F = fabs(-100);
+  double G = log(3);
+  double H = sin(45);
+  double I = cos(45);
+  double J = tan(45);
+  
+  printf("\n%d", C);*/
+
+//____________________________________________________________________
+
+  //calculate circumference and area of a circle
+
+  /*const double PI = 3.14159;
+  double radius;
+  double circumference;
+  double area;
+
+  printf("\nEnter the radius of a circle");
+  scanf("%lf", &radius);
+
+  circumference = 2 * PI * radius;
+  area = PI * radius * radius;
+ 
+  printf("\ncircumference: %lf", circumference);
+  printf("\narea: %lf", area);*/
+//____________________________________________________________________
+
+  //calculate hypotenuse of a triangle
+
+  /*double A;
+  double B;
+  double C;
+
+  printf("Enter side A: ");
+  scanf("%lf", &A);
+
+  printf("Enter side B: ");
+  scanf("%lf", &B);
+
+  C = sqrt(A*A + B*B);
+
+  printf("Side C: %lf", C);*/
+//____________________________________________________________________
+
+  //Learning about if statements
+
+ /* int age;
+
+  printf("\nEnter your age: ");
+  scanf("%d", &age);
+
+  if(age >= 18){
+    printf("You are now signed up.");
+  }
+  else if(age == 0){
+    printf("You can't sign up! You were jsut born!");
+  }
+  else if(age < 0){
+    printf("You haven't been born yet!");
+  }
+  else{
+    printf("You are too young to sign up!");
+  }*/
+//____________________________________________________________________
+
+  // switch = A more efficient alternative to using many "else if" statements
+  //          allows a value to be tested for equality against many cases
+
+    /*char grade;
+
+    printf("\nEnter a letter grade: ");
+    scanf("%c", &grade);
+
+    switch (grade){
+    case 'A':
+      printf("perfect!\n");
+      break;
+    case 'B':
+      printf("You did good!\n");
+      break;
+    case 'C':
+      printf("You did okay!\n");
+      break;
+    case 'D':
+      printf("At least its not an F!\n");
+      break;
+    case 'F':
+      printf("YOU FAILED!\n");
+      break;
+    default:
+      printf("Please enter only valid grades!\n");
+    }*/
+//____________________________________________________________________
+
+  // A temeperature conversion program
+
+    /*char unit;
+    float temp;
+
+    printf("\nIs the temperature in (F) or (C)?: ");
+    scanf("%c", &unit);
+
+    unit = toupper(unit);
+
+    if(unit == 'C'){
+      printf("\n Enter the temp in Celsius: ");
+      scanf("%f", &temp);
+      temp = (temp * 9 / 5) + 32;
+      printf("\nThe temp in Farenheit is: %.1f", temp);
+    }
+    else if(unit == 'F'){
+      printf("\n Enter the temp in Farenheit: ");
+      scanf("%f", &temp);
+      temp = ((temp - 32) * 5) / 9;
+      printf("\nThe temp in Celsius is: %.1f", temp);
+    }
+      else{
+      printf("\n %c is not a valid unit of measurement", unit);
+    }*/
 
     return 0;
 }
