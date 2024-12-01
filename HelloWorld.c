@@ -4,6 +4,30 @@
 #include <math.h>
 #include <ctype.h>
 
+/*void birthday(){
+  printf("\nHappy birthday to you!");
+  printf("\nHappy birthday to you!");
+  printf("\nHappy birthday dear...YOU!");
+  printf("\nHappy birthday to you!");
+}*/
+
+/*void birthday(char name[], int age){
+  printf("\nHappy bday dear %s!", name);
+  printf("\nYou are %d years old!", age);
+}*/
+
+/*double square(double x){
+  double result = x * x;
+  
+  return result;
+}*/
+
+/*int findMax(int x, int y){
+  return (x > y) ? x : y;
+}*/
+
+void hello(char[], int); // function prototype
+
 int main(){
 
 //____________________________________________________________________
@@ -293,7 +317,7 @@ int main(){
 
   // Programming a simple calculator
 
-    char operator;
+    /*char operator;
     double num1;
     double num2;
     double result;
@@ -328,12 +352,147 @@ int main(){
     
     default:
         printf("%c not valid", operator);
-    }
+    }*/
 //____________________________________________________________________
 
   // logical operators = && (AND) checks if two condiotions are true
 
-    
+    /*float temp = 10;
+    bool sunny = true;
+
+    if (temp >= 0 && temp <= 30 && sunny)
+    {
+      printf("The wheather is good!");
+    }
+    else{
+      printf("The wheather is bad!");
+    }*/
+//____________________________________________________________________
+
+  // logical operators = || (OR) checks is at least one condition is true
+
+   /* float temp = 25;
+
+    if (temp <= 0 || temp >= 30)
+    {
+      printf("\nThe wheather is bad!");
+    }
+    else{
+      printf("\nThe wheather is good!");
+    }*/
+//____________________________________________________________________
+
+  //logical operators = ! (NOT) reverses the state of a condition
+
+    /*bool sunny = false;
+
+    if(!sunny){
+        printf("\nIt's cloudy outside!");
+    }
+    else{
+        printf("\nIt's sunny outside!");
+    }*/
+//____________________________________________________________________
+
+  //functions
+
+    /*birthday();
+    birthday();
+    birthday();*/
+//____________________________________________________________________
+
+  //arguments
+  
+    /*char name[] = "Farhan";
+    int age = 16;
+
+    birthday(name, age);*/
+//____________________________________________________________________
+
+    //return statement = returns a statement to the calling function
+
+      /*double x = square(3.14);
+      printf("%lf", x);*/
+//____________________________________________________________________
+
+  // ternany operator = shortcut to if/else when assigning/returning a value
+  // (condition) ? value if true : value if false
+
+    /*int max = findMax(3, 4);
+
+    printf("%d", max);*/
+//____________________________________________________________________
+
+  //function prototypes
+
+    /*char name[] = "Bro";
+    int age = 16;
+
+    hello(name, age);*/
+//____________________________________________________________________
+
+  //string functions
+
+    /*char string1[] = "Farhan";
+    char string2[] = "Ffjfj";
+
+    //strlwr(string1);                      //converts string to lowercase
+    //strupr(string1);                      //converts string to uppercase
+    //strcat(string1, string2);             //appends string2 to end of string1
+    //strncat(string1, string2, 1);         //appends n characters from string2 to string1
+    //strcpy(string1, string2);             //copy string2 to string1
+    //strncpy(string1, string2, 2);         // copy n characters of string2 to string 1
+
+    //strset(string1, '?');                 //sets all character sof a string to a given character
+    //strnset(string1, 'x', 1);             //sets first n characters of a string to a given character
+    //strrev(string1);                      //reverses a string
+
+    //int result = strlen(string1);             //returns string lenght as int
+    //int result = strcmp(string1, string2);    //string compare all characters
+    //int result = strncmp(string1, string2, 1);   //string compare n characters
+    //int result = strcmpi(string1, string2);   //string compare all (ignore cases)
+    //int result = strnicmp(string1, string2);  //string comapre n characters (ignore cases)
+
+    //printf("%d", result);
+
+    if(result == 0){
+      printf("These strings are the same");
+    }
+    else{
+      printf("These strings are not the same");
+    }*/
+//____________________________________________________________________
+
+  //for loop = repeats a section of Code a limited amount of times 
+
+    /*for(int i = 10; i >= 1; i-=2){            //index = i
+      printf("%d\n", i);
+    }*/
+//____________________________________________________________________
+
+  //while loop = repeats a section of code possibly forever
+  //WHILE some conditions are true
+  //a while loops might not execute at all
+
+    char name[25];
+
+    printf("\nWhat's your name?");
+    fgets(name, 25, stdin);
+    name[strlen(name) - 1] = '\0';
+
+    while(strlen(name) == 0 ){
+        printf("\nYou did not enter your name!");
+        printf("\nWhat's your name?");
+        fgets(name, 25, stdin);
+        name[strlen(name) - 1] = '\0';
+    }
+
+    printf("Hello %s", name);
 
     return 0;
 }
+
+/*void hello(char name[], int age){
+  printf("\nHello %s", name);
+  printf("\nYou are %d years old", age);
+}*/
