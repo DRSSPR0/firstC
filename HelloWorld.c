@@ -474,7 +474,7 @@ int main(){
   //WHILE some conditions are true
   //a while loops might not execute at all
 
-    char name[25];
+    /*char name[25];
 
     printf("\nWhat's your name?");
     fgets(name, 25, stdin);
@@ -487,7 +487,52 @@ int main(){
         name[strlen(name) - 1] = '\0';
     }
 
-    printf("Hello %s", name);
+    printf("Hello %s", name);*/
+//____________________________________________________________________
+
+  //a while loop first checks condition,and then it executes block.
+  //a do while loop executes block first then checks condition.
+
+    /*int number = 0;
+    int sum = 0;
+
+    do{
+      printf("Enter a # above 0: ");
+      scanf("%d", &number);
+      if(number > 0)
+      {
+        sum += number;
+      }
+    }while(number > 0);
+
+    printf("sum: %d", sum);*/
+//____________________________________________________________________
+
+  //nested loop = a loop inside another loop
+
+    /*int rows;
+    int columns;
+    char symbol;
+
+    printf("Enter a symbol to use: ");
+    scanf("%c", &symbol);
+
+    printf("\nEnter number of rows: ");
+    scanf("%d", &rows);
+
+    printf("Enter number of columns: ");
+    scanf("%d", &columns);
+
+    for(int i = 1; i <= rows;i++)
+    {
+        for(int j = 1; j <= columns; j++)
+        {
+          printf("%c", symbol);
+        }
+        printf("\n");
+    }*/
+
+
 
     return 0;
 }
